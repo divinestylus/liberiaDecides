@@ -10,7 +10,7 @@ const
     navBar = document.querySelector('.showMenu');
 
 function voteNow() {
-    window.location.href = '../form.html'
+    window.location.href = './form.html'
 }
 voteBtnEl.addEventListener('click', voteNow);
 
