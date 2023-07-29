@@ -1,0 +1,402 @@
+{
+    "one": [
+        {
+            "aspirant": "EDWARD W. APPLETON, JR",
+            "position": "Standard Bearer",
+            "photo": "./assets/presidentsImg/edward-appleton.jpg",
+            "number": "CN-000936",
+            "type": "Party",
+            "party": "Grassroots Development Movement",
+            "partyAcronym": "(GDM)"
+        },
+        {
+            "aspirant": "EDWARD W. APPLETON, JR",
+            "position": "Vice Standard Bearer",
+            "photo": "",
+            "number": "CN-000936",
+            "type": "Party",
+            "party": "Grassroots Development Movement",
+            "partyAcronym": "(GDM)"
+        }
+    ],
+    "two": [
+        {
+            "aspirant": "JOSEPH N. BOAKAI",
+            "position": "Standard Bearer",
+            "photo": "./assets/presidentsImg/joseph-boakai.jpg",
+            "number": "CN-000129",
+            "type": "Party",
+            "party": "Unity Party",
+            "partyAcronym": "(UP)"
+        },
+        {
+            "aspirant": "JEREMIAH K. KOUNG, SR",
+            "position": "Vice Standard Bearer",
+            "photo": "",
+            "number": "CN-000126",
+            "type": "Party",
+            "party": "Unity Party",
+            "partyAcronym": "(UP)"
+        }
+    ],
+    "three": [
+        {
+            "aspirant": "ALLEN R. BROWN, JR",
+            "position": "Standard Bearer",
+            "photo": "./assets/presidentsImg/allen-brown.jpg",
+            "number": "CN-000986",
+            "type": "Party",
+            "party": "Liberia Restoration Party",
+            "partyAcronym": "(LRP)"
+        },
+        {
+            "aspirant": "NOOSEVETT J. WEAH",
+            "position": "Vice Standard Bearer",
+            "photo": "",
+            "number": "CN-000985",
+            "type": "Party",
+            "party": "Liberia Restoration Party",
+            "partyAcronym": "(LRP)"
+        }
+    ],
+    "four": [
+        {
+            "aspirant": "ALEXANDER B. CUMMINGS",
+            "position": "Standard Bearer",
+            "photo": "./assets/presidentsImg/alex-cummings.jpg",
+            "number": "CN-000692",
+            "type": "Party",
+            "party": "Collaborating Political Parties",
+            "partyAcronym": "(CPP)"
+        },
+        {
+            "aspirant": "CHARLYNE MNAMAH-MAR BRUMSKINE",
+            "position": "Vice Standard Bearer",
+            "photo": "",
+            "number": "CN-000011",
+            "type": "Party",
+            "party": "Collaborating Political Parties",
+            "partyAcronym": "(CPP)"
+        }
+    ],
+    "five": [
+        {
+            "aspirant": "SIMEON C. M. FREEMAN",
+            "position": "Standard Bearer",
+            "photo": "./assets/presidentsImg/simeon-freeman.jpg",
+            "number": "CN-000400",
+            "type": "Party",
+            "party": "Movement for Progressive Change",
+            "partyAcronym": "(MPC)"
+        },
+        {
+            "aspirant": "JAMES K. BARCLAY",
+            "position": "Vice Standard Bearer",
+            "photo": "",
+            "number": "CN-000401",
+            "type": "Party",
+            "party": "Movement for Progressive Change",
+            "partyAcronym": "(MPC)"
+        }
+    ],
+    "six": [
+        {
+            "aspirant": "TIAWAN SAYE GONGLOE",
+            "position": "Standard Bearer",
+            "photo": "./assets/presidentsImg/tiawan-gongloe.jpg",
+            "number": "CN-000879",
+            "type": "Party",
+            "party": "Liberian's People's Party",
+            "partyAcronym": "(LPP)"
+        },
+        {
+            "aspirant": "EMMANUEL YARKPAWOLO",
+            "position": "Vice Standard Bearer",
+            "photo": "",
+            "number": "CN-000880",
+            "type": "Party",
+            "party": "Liberian's People's Party",
+            "partyAcronym": "(LPP)"
+        }
+    ],
+    "seven": [
+        {
+            "aspirant": "LUSINEE F. KAMARA, SR",
+            "position": "Standard Bearer",
+            "photo": "./assets/presidentsImg/lusinee-kamara.jpg",
+            "number": "CN-000589",
+            "type": "Party",
+            "party": "All Liberia Coalition Party",
+            "partyAcronym": "(ALCOP)"
+        },
+        {
+            "aspirant": "MATTHEW V.Z. DARBLO, SR",
+            "position": "Vice Standard Bearer",
+            "photo": "",
+            "number": "CN-000590",
+            "type": "Party",
+            "party": "All Liberia Coalition Party",
+            "partyAcronym": "(ALCOP)"
+        }
+    ],
+    "eight": [
+        {
+            "aspirant": "DAVID G. B. KIAMU",
+            "position": "Standard Bearer",
+            "photo": "./assets/presidentsImg/david-kiamu.jpg",
+            "number": "CN-000997",
+            "type": "Party",
+            "party": "Democratic People's Party Of Liberia",
+            "partyAcronym": "(DPPL)"
+        },
+        {
+            "aspirant": "ANNIE Y. TUAZAMA",
+            "position": "Vice Standard Bearer",
+            "photo": "",
+            "number": "CN-001002",
+            "type": "Party",
+            "party": "Democratic People's Party Of Liberia",
+            "partyAcronym": "(DPPL)"
+        }
+    ],
+    "nine": [
+        {
+            "aspirant": "ALEXANDER N. KOLLIE",
+            "position": "Standard Bearer",
+            "photo": "./assets/presidentsImg/alexander-kollie.jpg",
+            "number": "CN-000894",
+            "type": "Party",
+            "party": "Reformers National Congress",
+            "partyAcronym": "(RNC)"
+        },
+        {
+            "aspirant": "GRACE YANCY, YUAN",
+            "position": "Vice Standard Bearer",
+            "photo": "",
+            "number": "CN-000893",
+            "type": "Party",
+            "party": "Reformers National Congress",
+            "partyAcronym": "(RNC)"
+        }
+    ],
+    "ten": [
+        {
+            "aspirant": "SHEIKH A. KOUYATEH",
+            "position": "Standard Bearer",
+            "photo": "./assets/presidentsImg/sheikh-kouyateh.jpg",
+            "number": "CN-000992",
+            "type": "Party",
+            "party": "Liberia First Movement",
+            "partyAcronym": "(LFM)"
+        },
+        {
+            "aspirant": "MAX O. VARGBELEE",
+            "position": "Vice Standard Bearer",
+            "photo": "",
+            "number": "CN-000991",
+            "type": "Party",
+            "party": "Liberia First Movement",
+            "partyAcronym": "(LFM)"
+        }
+    ],
+    "eleven": [
+        {
+            "aspirant": "BENDU ALEHMA KROMAH",
+            "position": "Standard Bearer",
+            "photo": "./assets/presidentsImg/alehma-kromah.jpg",
+            "number": "CN-000822",
+            "type": "Independent",
+            "party": "Independent Candidate",
+            "partyAcronym": "(IDD)"
+        },
+        {
+            "aspirant": "THOMAS DEKLEU KRUAH",
+            "position": "Vice Standard Bearer",
+            "photo": "",
+            "number": "CN-000820",
+            "type": "Independent",
+            "party": "Independent Candidate",
+            "partyAcronym": "(IDD)"
+        }
+    ],
+    "twelve": [
+        {
+            "aspirant": "RICHARD SAYE MILLER",
+            "position": "Standard Bearer",
+            "photo": "./assets/presidentsImg/richard-miller.jpg",
+            "number": "CN-000928",
+            "type": "Party",
+            "party": "Liberians For Prosperity",
+            "partyAcronym": "(LFP)"
+        },
+        {
+            "aspirant": "EMIKE SLAWON, JR",
+            "position": "Vice Standard Bearer",
+            "photo": "",
+            "number": "CN-000927",
+            "type": "Party",
+            "party": "Liberians For Prosperity",
+            "partyAcronym": "(LFP)"
+        }
+    ],
+    "thirteen": [
+        {
+            "aspirant": "CLARENCE K. MONIBA",
+            "position": "Standard Bearer",
+            "photo": "./assets/presidentsImg/clarence-moniba.jpg",
+            "number": "CN-000509",
+            "type": "Party",
+            "party": "Liberian National Union",
+            "partyAcronym": "(LINU)"
+        },
+        {
+            "aspirant": "GRACE-TEE KPAAN",
+            "position": "Vice Standard Bearer",
+            "photo": "",
+            "number": "CN-000508",
+            "type": "Party",
+            "party": "Liberian National Union",
+            "partyAcronym": "(LINU)"
+        }
+    ],
+    "fourteen": [
+        {
+            "aspirant": "ROBERT FRANZ MORRIS",
+            "position": "Standard Bearer",
+            "photo": "./assets/presidentsImg/robert-franz-morris.jpg",
+            "number": "CN-000871",
+            "type": "Independent",
+            "party": "Independent Candidate",
+            "partyAcronym": "(IDD)"
+        },
+        {
+            "aspirant": "CELIA CUFFY BROWN",
+            "position": "Vice Standard Bearer",
+            "photo": "",
+            "number": "CN-000872",
+            "type": "Independent",
+            "party": "Independent Candidate",
+            "partyAcronym": "(IDD)"
+        }
+    ],
+    "fifteen": [
+        {
+            "aspirant": "SARA BEYSOLOW NYANTI",
+            "position": "Standard Bearer",
+            "photo": "./assets/presidentsImg/sara-nyanti.jpg",
+            "number": "CN-000885",
+            "type": "Party",
+            "party": "African Liberation League",
+            "partyAcronym": "(ALL)"
+        },
+        {
+            "aspirant": "SIMEON M.B. MORIBAH",
+            "position": "Vice Standard Bearer",
+            "photo": "",
+            "number": "CN-000884",
+            "type": "Party",
+            "party": "African Liberation League (ALL)",
+            "partyAcronym": "(ALL)"
+        }
+    ],
+    "sixteen": [
+        {
+            "aspirant": "WILLIAM WIAH TUIDER",
+            "position": "Standard Bearer",
+            "photo": "./assets/presidentsImg/william-tuder.jpg",
+            "number": "CN-001007",
+            "type": "Party",
+            "party": "Democratic National Allegiance",
+            "partyAcronym": "(DNA)"
+        },
+        {
+            "aspirant": "JONAH S. DUMOE",
+            "position": "Vice Standard Bearer",
+            "photo": "",
+            "number": "CN-001005",
+            "type": "Party",
+            "party": "Democratic National Allegiance",
+            "partyAcronym": "(DNA)"
+        }
+    ],
+    "seventeen": [
+        {
+            "aspirant": "JOSHUA TOM TURNER",
+            "position": "Standard Bearer",
+            "photo": "./assets/presidentsImg/joshua-turner.jpg",
+            "number": "CN-000801",
+            "type": "Party",
+            "party": "New Liberia Party (NLP)",
+            "partyAcronym": "(NLP)"
+        },
+        {
+            "aspirant": "Q. SOMAH PAYGAI, SR",
+            "position": "Vice Standard Bearer",
+            "photo": "",
+            "number": "CN-000955",
+            "type": "Party",
+            "party": "New Liberia Party (NLP)",
+            "partyAcronym": "(NLP)"
+        }
+    ],
+    "eighteen": [
+        {
+            "aspirant": "GEORGE MANNEH WEAH",
+            "position": "Standard Bearer",
+            "photo": "./assets/presidentsImg/george-weah.jpg",
+            "number": "CN-000110",
+            "type": "Party",
+            "party": "Coalition for Democratic Change",
+            "partyAcronym": "(CDC)"
+        },
+        {
+            "aspirant": "JEWEL C. HOWARD-TAYLOR",
+            "position": "Vice Standard Bearer",
+            "photo": "",
+            "number": "CN-000109",
+            "type": "Party",
+            "party": "Coalition for Democratic Change",
+            "partyAcronym": "(CDC)"
+        }
+    ],
+    "nineteen": [
+        {
+            "aspirant": "JEREMIAH Z. WHAPOE",
+            "position": "Standard Bearer",
+            "photo": "./assets/presidentsImg/jeremiah-whapoe.jpg",
+            "number": "CN-000472",
+            "type": "Party",
+            "party": "Vision for Liberia Transformation",
+            "partyAcronym": "(VOLT)"
+        },
+        {
+            "aspirant": "ERASMUS D. FAHNBULLEH",
+            "position": "Vice Standard Bearer",
+            "photo": "",
+            "number": "CN-000704",
+            "type": "Party",
+            "party": "Vision for Liberia Transformation",
+            "partyAcronym": "(VOLT)"
+        }
+    ],
+    "twenty": [
+        {
+            "aspirant": "LUTHER N. YORFEE",
+            "position": "Standard Bearer",
+            "photo": "./assets/presidentsImg/luther-yorfee.jpg",
+            "number": "CN-001027",
+            "type": "Party",
+            "party": "Liberia Rebuilding Party",
+            "partyAcronym": "(REBUILDERS)"
+        },
+        {
+            "aspirant": "JUVENAL C. PEARSON",
+            "position": "Vice Standard Bearer",
+            "photo": "",
+            "number": "CN-001026",
+            "type": "Party",
+            "party": "Liberia Rebuilding Party",
+            "partyAcronym": "(REBUILDERS)"
+        }
+    ]
+}

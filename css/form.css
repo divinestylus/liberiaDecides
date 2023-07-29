@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;500;600;700;800&display=swap');
+
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+:root {
+    --red: #D32222;
+    --deepRed: #AF1D1D;
+    --blue: #20385D;
+    --deepBlue: #1A2E4C;
+    --green: #00916E;
+    --white: #ffffff;
+    --offWhite: #eeeeee;
+    --metaBlue: #4267B2;
+    --black: #282828;
+    --gray: #c1c1c1;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 0.9rem;
+    font-family: 'Mukta', sans-serif;
+    color: var(--black);
+}
+
+.wrapper {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+}
+
+form.voter-registration,
+form.voter-signin {
+    display: none;
+    padding: 2rem;
+
+}
+
+form.active {
+    width: 100vw;
+    border-radius: 4px;
+    display: block;
+}
+
+input,
+select {
+    display: block;
+    width: 100%;
+    text-transform: capitalize;
+    margin: 0.5rem 0;
+    border: 0;
+    border-radius: 4px;
+    outline: transparent;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    font-family: 'Mukta', sans-serif;
+    color: var(--black);
+    background-color: var(--offWhite);
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.fa-camera {
+    display: grid;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    color: var(--white);
+    top: 4rem;
+    font-size: 1.5rem;
+    z-index: 1;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.uploadImgCover {
+    display: grid;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.upload-img,
+.display-img {
+    display: block;
+    margin: 0 auto 2rem auto;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 100px;
+    filter: brightness(90%);
+    transition: filter 0.2s ease-in;
+}
+
+.upload-img:hover {
+    filter: brightness(80%);
+    cursor: pointer;
+}
+
+div.gender {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+div.gender label {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    display: flex;
+    gap: 0.3rem;
+    padding: 0 1rem;
+    align-items: center;
+}
+
+input[type="radio"] {
+    accent-color: var(--red)
+}
+
+button.register,
+button.sign-in {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    border: 0;
+    border-radius: 4px;
+    background-color: var(--red);
+    color: var(--white);
+    transition: all 0.2s ease-in;
+}
+
+button.register:hover,
+button.sign-in:hover {
+    background-color: var(--deepRed);
+    cursor: pointer;
+}
+
+
+.register-login {
+    display: none;
+    text-align: center;
+
+}
+
+.register-login a {
+    display: none;
+    text-decoration: none;
+    margin: 0;
+    color: var(--metaBlue);
+}
+
+.error-msg {
+    color: var(--red);
+    line-height: 1rem;
+    padding: 0 1rem;
+    font-size: 0.8rem;
+}
+
+
+@media(min-width: 330px) {
+    div.gender {
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+}
+
+
+@media(min-width: 700px) {
+
+    form.voter-registration,
+    form.voter-signin {
+        width: 450px;
+        box-shadow: 0.5px 2px 8px rgba(0, 0, 0, 0.08);
+        margin: 0 auto;
+    }
+}

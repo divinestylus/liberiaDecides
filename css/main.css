@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;500;600;700;800&display=swap');
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+:root {
+    --red: #D32222;
+    --deepRed: #AF1D1D;
+    --blue: #20385D;
+    --deepBlue: #1A2E4C;
+    --green: #00916E;
+    --white: #ffffff;
+    --offWhite: #eeeeee;
+    --metaBlue: #4267B2;
+    --black: #282828;
+    --gray: #c1c1c1;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 0.9rem;
+    font-family: 'Mukta', sans-serif;
+    color: var(--blue);
+    text-align: center;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    background-color: var(--white);
+    position: relative;
+    z-index: 1;
+}
+
+header img {
+    width: 150px;
+}
+
+h1 {
+    font-size: 2rem;
+    margin: 0;
+    line-height: 2.2rem;
+    padding-block: 1rem;
+}
+
+.features h1,
+.about-us h1 {
+    font-size: 1.8rem;
+}
+
+h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    padding-block: 0.5rem;
+}
+
+p {
+    margin: 0;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+}
+
+.fa-bars {
+    font-size: 1.5rem;
+    color: var(--blue);
+}
+
+.hero {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: var(--blue);
+    color: var(--white);
+    padding: 6rem 2rem 0 2rem;
+}
+
+.hero img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+}
+
+nav.nav-bar {
+    display: none;
+}
+
+
+
+.showMenu {
+    display: flex;
+    flex-direction: column;
+    transition: 0.6s ease-in-out;
+    transform: translateY(-16px);
+    width: 100%;
+    position: absolute;
+    transition: 0.6s ease-in-out;
+}
+
+.showMenu a {
+    background-color: var(--deepBlue);
+    color: var(--white);
+    padding: 1rem;
+    text-decoration: none;
+    flex-direction: column;
+}
+
+.showMenu a:hover {
+    background-color: var(--deepRed);
+}
+
+.displayShowMenu {
+    transform: translateY(96px);
+}
+
+button.cta {
+    border: 0;
+    display: block;
+    margin: 2rem auto;
+    padding: 0.8rem 2rem;
+    border-radius: 4px;
+    background-color: var(--red);
+    color: var(--white);
+}
+
+button.cta:hover {
+    background-color: var(--deepRed);
+    cursor: pointer;
+}
+
+.features {
+    padding: 4rem 2rem;
+}
+
+.cards {
+    padding: 2rem 0;
+    display: grid;
+    gap: 6rem;
+    grid-template-columns: 1fr;
+}
+
+.cards-one,
+.cards-two,
+.cards-three {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr;
+}
+
+.features-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.about-us {
+    background-color: var(--blue);
+    padding: 4rem 2rem 5rem 2rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: var(--white);
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white);
+    color: var(--blue);
+    padding: 2rem;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding-block: 1rem 0;
+}
+
+.social-media i {
+    font-size: 2.5rem;
+    color: var(--blue);
+}
+
+.social-media i:hover {
+    color: var(--deepBlue);
+}
+
+
+
+
+
+@media(min-width: 300px) {
+    header img {
+        width: 160px;
+    }
+}
+
+@media(min-width: 500px) {
+    header img {
+        width: 200px;
+    }
+}
+
+@media(min-width: 600px) {
+    .features {
+        padding-inline: 10rem;
+    }
+}
+
+@media(min-width: 900px) {
+    header {
+        padding: 2rem 4rem;
+    }
+
+    .hero {
+        grid-template-columns: repeat(2, 1fr);
+        padding-inline: 4rem;
+        align-items: s;
+        text-align: left;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+
+    .fa-bars {
+        display: none;
+    }
+
+    nav.nav-bar {
+        display: flex;
+        gap: 1rem;
+    }
+
+    nav.nav-bar a {
+        text-decoration: none;
+        padding: 0.4rem 2rem;
+        border-radius: 4px;
+        color: var(--blue);
+        border:  2px solid var(--blue);
+        transition: all 0.2s ease-in;
+    }
+
+    nav.nav-bar a:hover {
+        text-decoration: none;
+        color: var(--white);
+        background-color: var(--blue);
+    }
+
+    .showMenu {
+        display: none;
+    }
+
+    .hero button {
+        margin: 2rem 0 0 0;
+    }
+
+    .features {
+        padding-inline: 4rem;
+    }
+
+    .features h1,
+    .about-us h1 {
+        font-size: 1.8rem;
+    }
+
+    .cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .about-us {
+        padding-inline: 12rem;
+    }
+
+    footer {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 4rem;
+    }
+
+    .social-media {
+        padding-block: 0.5rem 0;
+    }
+}
