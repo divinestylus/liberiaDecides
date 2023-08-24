@@ -11,39 +11,43 @@
 </head>
 
 <body>
-    <main class="container">
-        <nav class="nav-bar">
-            <img src="./assets/logo-02.png" alt="Logo" class="logo">
+
+    <header id="header">
+        <div class="wrapper">
+            <img src="./assets/logo.png" alt="Logo" class="logo-header">
             <img src="./assets/user-icon.png" alt="Profile Photo" class="profile-photo">
-        </nav>
-        <aside class="sidebar">
-            <div class="sidebar-card">
-                <div>
-                    <img src="./assets/testicon-01.png" alt="presidentialImage">
-                    <h1>Presidential</h1>
-                </div>
-            </div>
-            <div class="sidebar-card">
-                <div>
-                    <img src="./assets/testicon-01.png" alt="senatorialImage">
-                    <h1>Senatorial</h1>
-                </div>
-            </div>
-            <div class="sidebar-card">
-                <div>
-                    <img src="./assets/testicon-01.png" alt="representativeImage">
-                    <h1>Representative</h1>
-                </div>
-            </div>
-        </aside>
-        <div class="search-result">
-            <input type="search" placeholder="Search">
-            <button class="view-result">View Election Result</button>
         </div>
-        <section class="main-display">
-            <div class="candidates-display"></div>
-        </section>
-    </main>
+    </header>
+    
+    <aside id="sidebar">
+        <div class="sidebar-card">
+            <div>
+                <img src="./assets/testicon-01.png" alt="presidentialImage">
+                <h1>Presidential</h1>
+            </div>
+        </div>
+        <div class="sidebar-card">
+            <div>
+                <img src="./assets/testicon-01.png" alt="senatorialImage">
+                <h1>Senatorial</h1>
+            </div>
+        </div>
+        <div class="sidebar-card">
+            <div>
+                <img src="./assets/testicon-01.png" alt="representativeImage">
+                <h1>Representative</h1>
+            </div>
+        </div>
+    </aside>
+
+    <section id="search-and-result">
+        <input type="search" placeholder="Search">
+        <button class="view-result">Live Results</button>
+    </section>
+
+    <section id="candidates">
+        <div class="candidates-display"></div>
+    </section>
 </body>
 
 </html>

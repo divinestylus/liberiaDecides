@@ -4,6 +4,8 @@ VOTING PAGE
 ==============================
 =============================*/
 
+console.log("IT WORKS")
+
 const
     candidateDisplay = document.querySelector('.candidates-display');
 
@@ -223,8 +225,7 @@ function displayRepresentativeCandidates() {
                 <img src="${counties[i].photo}" alt="candidates-img">
                 <h2>${counties[i].aspirant}</h2>
                 <p class="position">District #${counties[i].district}</p>
-                <p>${counties[i].county} County</p>
-                <p>${counties[i].party}</p>
+                <p>${counties[i].county} County <br> ${counties[i].party}</p>
             </div>
             `;
     }

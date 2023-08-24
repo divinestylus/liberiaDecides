@@ -1,20 +1,12 @@
-/*============================
-==============================
-LANDING PAGE
-==============================
-=============================*/
-
 const
-    voteBtnEl = document.querySelectorAll('.cta'),
+    voteBtnEl = document.querySelector('.cta'),
     hamburgerMenu = document.querySelector('.fa-bars'),
     navBar = document.querySelector('.showMenu');
 
 function voteNow() {
-    window.location.href = './form.html'
+    window.location.href = '../form.html'
 }
-voteBtnEl.forEach(button => {
-    button.addEventListener('click', voteNow);
-})
+voteBtnEl.addEventListener('click', voteNow);
 
 function displayNavigation() {
     navBar.classList.toggle('displayShowMenu');

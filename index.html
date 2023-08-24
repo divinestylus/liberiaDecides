@@ -14,72 +14,101 @@
 </head>
 
 <body>
-    <main class="container">
-        <nav class="showMenu">
-            <a href="#features">Features</a>
-            <a href="#about-us">About Us</a>
-        </nav>
-        <header>
-            <img src="./assets/logo-02.png" alt="Logo">
+
+    <header id="header">
+        <div class="wrapper">
+            <img src="./assets/logo.png" alt="Logo" class="logo-header">
             <i class="fa-solid fa-bars"></i>
-            <nav class="nav-bar">
+            <nav class="navbar">
                 <a href="#features">Features</a>
                 <a href="#about-us">About Us</a>
             </nav>
-        </header>
-        <section class="hero">
+            <nav class="navbar-menu-hamburger">
+                <a href="#features">Features</a>
+                <a href="#about-us">About Us</a>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="wrapper">
             <div>
                 <h1>Your gateway to a peaceful and efficient election</h1>
                 <p>Cast your vote with ease and confidence.</p>
-                <button class="cta">Vote now</button>
+                <button class="button call-to-action-one">Vote now</button>
             </div>
-            <img src="./assets/motorcyclist.png" alt="Hero Image" class="hero-img">
-        </section>
+            <img src="./assets/african-girl-2.jpg" alt="Motorcyclist voting on his smartphone" class="img-hero">
+        </div>
+    </section>
 
-        <section class="features" id="features">
+    <section id="features">
+        <div class="wrapper">
             <h1>Features</h1>
-            <div class="cards">
-                <div class="cards-one">
-                    <img src="./assets/african-girl-2.jpg" alt="image" class="features-img">
-                    <div>
+            <div class="card-list">
+                <div class="card">
+                    <img src="./assets/icon.svg" alt="image" class="card-img">
+                    <div class="text">
                         <h2>Convenient and secure</h2>
-                        <p>Cast your vote from the comfort of your home, ensuring a safe and secure electoral process.</p>
+                        <p>Cast your vote from anywhere, ensuring a safe and secure electoral process.</p>
                     </div>
                 </div>
-                
-                <div class="cards-two">
-                    <img src="./assets/girl-celebrating.jpg" alt="image" class="features-img">
-                    <div>
-                        <h2>Real-Time election updates</h2>
+
+                <div class="card">
+                    <img src="./assets/icon.svg" alt="image" class="card-img">
+                    <div class="text">
+                        <h2>Real-Time updates</h2>
                         <p>Stay informed with live updates on polling stations, results, and voter turnout.</p>
                     </div>
                 </div>
 
-                <div class="cards-three">
-                    <img src="./assets/african-women.jpg" alt="image" class="features-img">
-                    <div>
+                <div class="card">
+                    <img src="./assets/icon.svg" alt="image" class="card-img">
+                    <div class="text">
                         <h2>User-Friendly Interface</h2>
                         <p>Our app's intuitive design allows even first-time voters to navigate effortlessly.</p>
                     </div>
                 </div>
             </div>
-            
-        </section>
-        
-        <section class="about-us" id="about-us">
-            <h1>About Us</h1>
-            <p>We empower every Liberian with the ability to vote securely and promote a peaceful electoral process, by making elections simpler, efficient, and transparent.</p>
-            <button class="cta">Vote now</button>
-        </section>
+        </div>
+    </section>
 
-        <footer>
-            <p>&copy;2023 Liberia Decides. All rights reserved</p>
-            <div class="social-media">
-                <a href="https://github.com/divinestylus" target="_blank"><i class="fa-brands fa-square-github"></i></a>
-                <a href="https://www.behance.net/divinestylus" target="_blank"><i class="fa-brands fa-square-behance"></i></a>
+    <section id="product-display">
+        <div class="wrapper">
+            <div class="grid-layout">
+                <img src="./assets/girl-celebrating.jpg" alt="image" class="grid-layout-img">
+                <div class="text">
+                    <h2>Things you can do</h2>
+                    <ul class="text-list">
+                        <li>Create an account</li>
+                        <li>Vote your preferred candidate</li>
+                        <li>View election's result</li>
+                    </ul>
+                </div>
             </div>
-        </footer>
-    </main>
+        </div>
+    </section>
+
+    <section id="about-us">
+        <div class="wrapper">
+            <h1>About Us</h1>
+            <p>We empower every Liberian with the ability to vote securely. We promote a peaceful electoral process, by
+                making elections simpler, efficient, and transparent.</p>
+            <button class="button call-to-action-two">Vote now</button>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <div class="wrapper">
+            <p>&copy;2023 Liberia Decides</p>
+            <div class="icons-list">
+                <a href="https://github.com/divinestylus" target="_blank" class="icon"><i
+                        class="fa-brands fa-square-github"></i></a>
+                <a href="https://www.behance.net/divinestylus" target="_blank" class="icon"><i
+                        class="fa-brands fa-square-behance"></i></a>
+            </div>
+        </div>
+    </footer>
+
 </body>
 
 </html>
