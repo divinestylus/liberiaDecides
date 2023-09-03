@@ -1,16 +1,28 @@
+/*============================
+==============================
+HOME PAGE
+==============================
+=============================*/
+
 const
-    voteBtnEl = document.querySelector('.cta'),
-    hamburgerMenu = document.querySelector('.fa-bars'),
-    navBar = document.querySelector('.showMenu');
+    voteBtnEl = document.querySelectorAll('.button'),
+    hamburgerMenu = document.querySelector('#header .wrapper svg'),
+    navBar = document.querySelector('.navbar-menu-hamburger');
+
+
+
+voteBtnEl.forEach(buttonEl => {
+    buttonEl.addEventListener('click', voteNow);
+})
+
+hamburgerMenu.addEventListener('click', displayNavigation);
 
 function voteNow() {
     window.location.href = '../form.html'
 }
-voteBtnEl.addEventListener('click', voteNow);
 
 function displayNavigation() {
-    navBar.classList.toggle('displayShowMenu');
-    hamburgerMenu.classList.toggle('fa-times');
+    navBar.classList.toggle('displayMenu');
 }
-hamburgerMenu.addEventListener('click', displayNavigation);
+
 
