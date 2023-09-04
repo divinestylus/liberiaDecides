@@ -161,7 +161,7 @@ function displaySenatorialCandidates() {
         candidateDisplay.innerHTML += `
             <div class="candidates-card">
                 <!-- <img src="${counties[i].photo}" alt="candidates-img"> -->
-                <img src="../assets/user-icon.png" alt="candidates-img">
+                <img src="./assets/user-icon.png" alt="candidates-img">
                 <h2>${counties[i].aspirant}</h2>
                 <p class="position">${counties[i].county} County</p>
                 <p>${counties[i].party}</p>
@@ -228,7 +228,7 @@ function displayRepresentativeCandidates() {
         candidateDisplay.innerHTML += `
             <div class="candidates-card">
                 <!-- <img src="${counties[i].photo}" alt="candidates-img"> -->
-                <img src="../assets/user-icon.png" alt="candidates-img">
+                <img src="./assets/user-icon.png" alt="candidates-img">
                 <h2>${counties[i].aspirant}</h2>
                 <p class="position">District #${counties[i].district}</p>
                 <p>${counties[i].county} County <br> ${counties[i].party}</p>
