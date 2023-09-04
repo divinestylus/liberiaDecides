@@ -6,8 +6,7 @@ CANDIDATES PAGE
 
 const
     candidateDisplay = document.querySelector('.candidates-display'),
-    searchField = document.querySelector('#search-and-result input'),
-    candidateDisplayToVote = document.querySelector('.candidates-wrapper');
+    searchField = document.querySelector('#search-and-result input');
 
 let
     candidatesCategories = document.querySelectorAll('.sidebar-card'),
@@ -35,7 +34,6 @@ function getData() {
         .then(data => {
             senatorialData = data;
             displayCandidates();
-
         })
         .catch(error => {
             console.error(`Something went wrong: ${error}`)
@@ -46,13 +44,13 @@ function getData() {
         .then(data => {
             representativeData = data;
             displayCandidates();
-
         })
         .catch(error => {
             console.error(`Something went wrong: ${error}`)
         })
 }
 getData();
+
 
 function displayUserImg() {
     if (localStorage.getItem("userImage") !== null) {
@@ -61,23 +59,29 @@ function displayUserImg() {
 }
 displayUserImg();
 
+
 function displayCandidates() {
     let previousCategory = null;
     displayPresidentialCandidates();
     candidatesCategories = Array.from(candidatesCategories);
     if (candidatesCategories.length > 0) {
         candidatesCategories[0].classList.add('active-sidebar-card');
+        localStorage.setItem('category', "Presidential");
+
     }
     candidatesCategories.forEach(categories => {
         categories.addEventListener('click', (e) => {
             let category = e.currentTarget.firstElementChild.lastElementChild;
             if (category.textContent.toLowerCase() === "Senatorial".toLowerCase()) {
+                localStorage.setItem('category', category.textContent);
                 displaySenatorialCandidates();
             }
             else if (category.textContent.toLowerCase() === "Representative".toLowerCase()) {
+                localStorage.setItem('category', category.textContent);
                 displayRepresentativeCandidates();
 
             } else {
+                localStorage.setItem('category', "Presidential");
                 displayPresidentialCandidates();
             }
             if (previousCategory !== null) {
@@ -90,6 +94,7 @@ function displayCandidates() {
 
     })
 }
+
 
 function displayPresidentialCandidates() {
     candidateDisplay.innerHTML = "";
@@ -107,11 +112,12 @@ function displayPresidentialCandidates() {
                 `;
         }
     }
-    candidatesCard = document.querySelectorAll('.candidates-card');
     candidatesName = document.querySelectorAll('.candidates-card h2');
     searchCandidates(candidatesName);
+    candidatesCard = document.querySelectorAll('.candidates-card');
     displayCandidatesToVote(candidatesCard);
 }
+
 
 function displaySenatorialCandidates() {
     candidateDisplay.innerHTML = "";
@@ -177,6 +183,8 @@ function displaySenatorialCandidates() {
     }
     candidatesName = document.querySelectorAll('.candidates-card h2');
     searchCandidates(candidatesName);
+    candidatesCard = document.querySelectorAll('.candidates-card');
+    displayCandidatesToVote(candidatesCard);
 }
 
 function displayRepresentativeCandidates() {
@@ -244,6 +252,8 @@ function displayRepresentativeCandidates() {
     }
     candidatesName = document.querySelectorAll('.candidates-card h2');
     searchCandidates(candidatesName);
+    candidatesCard = document.querySelectorAll('.candidates-card');
+    displayCandidatesToVote(candidatesCard);
 }
 
 
@@ -261,43 +271,12 @@ function searchCandidates(candidatesData) {
 
 
 function displayCandidatesToVote(candidates) {
-    // candidateDisplayToVote.innerHTML = "";
     let selectedCandidate;
     candidates.forEach(candidate => {
         candidate.addEventListener('click', (e) => {
             selectedCandidate = e.currentTarget.children[1].textContent;
-            console.log("Sam");
-
-            for (const group in presidentialData) {
-                const aspirants = presidentialData[group];
-                if (selectedCandidate.toLowerCase() === aspirants[0].aspirant.toLowerCase()) {
-
-                    candidateDisplayToVote.innerText = `
-                    <div class="candidates-card">
-                        <img src="${aspirants[0].photo}">
-                        <div class="text">
-                            <h2>${aspirants[0].aspirant}</h2>
-                            <p class="position">${aspirants[0].position}</p>
-                            <p class="party">${aspirants[0].party}</p>
-                            <p class="vote-number">Vote #2</p>
-                        </div>
-                    </div>
-                    <div class="candidates-card">
-                        <img src="${aspirants[1].photo}">
-                        <div class="text">
-                            <h2>${aspirants[1].aspirant}</h2>
-                            <p class="position">${aspirants[1].position}</p>
-                            <p class="party">${aspirants[1].party}</p>
-                            <p class="vote-number">Vote #2</p>
-                        </div>
-                    </div>
-                    
-                    `;
-                }
-            }
-            window.location.href = "../voting.html"
-            
+            localStorage.setItem('selectedCandidate', selectedCandidate);
+            window.location.href = "./voting.html";
         })
     })
-
 }

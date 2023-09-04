@@ -7,7 +7,8 @@
             "number": "CN-000936",
             "type": "Party",
             "party": "Grassroots Development Movement",
-            "partyAcronym": "(GDM)"
+            "partyAcronym": "(GDM)",
+            "vote": 1
         },
         {
             "aspirant": "EDWARD W. APPLETON, JR",
@@ -16,7 +17,8 @@
             "number": "CN-000936",
             "type": "Party",
             "party": "Grassroots Development Movement",
-            "partyAcronym": "(GDM)"
+            "partyAcronym": "(GDM)",
+            "vote": 1
         }
     ],
     "two": [
@@ -27,7 +29,8 @@
             "number": "CN-000129",
             "type": "Party",
             "party": "Unity Party",
-            "partyAcronym": "(UP)"
+            "partyAcronym": "(UP)",
+            "vote": 2
         },
         {
             "aspirant": "JEREMIAH K. KOUNG, SR",
@@ -36,7 +39,8 @@
             "number": "CN-000126",
             "type": "Party",
             "party": "Unity Party",
-            "partyAcronym": "(UP)"
+            "partyAcronym": "(UP)",
+            "vote": 2
         }
     ],
     "three": [
@@ -47,7 +51,8 @@
             "number": "CN-000986",
             "type": "Party",
             "party": "Liberia Restoration Party",
-            "partyAcronym": "(LRP)"
+            "partyAcronym": "(LRP)",
+            "vote": 3
         },
         {
             "aspirant": "NOOSEVETT J. WEAH",
@@ -56,7 +61,8 @@
             "number": "CN-000985",
             "type": "Party",
             "party": "Liberia Restoration Party",
-            "partyAcronym": "(LRP)"
+            "partyAcronym": "(LRP)",
+            "vote": 3
         }
     ],
     "four": [
@@ -67,7 +73,8 @@
             "number": "CN-000692",
             "type": "Party",
             "party": "Collaborating Political Parties",
-            "partyAcronym": "(CPP)"
+            "partyAcronym": "(CPP)",
+            "vote": 4
         },
         {
             "aspirant": "CHARLYNE MNAMAH-MAR BRUMSKINE",
@@ -76,7 +83,8 @@
             "number": "CN-000011",
             "type": "Party",
             "party": "Collaborating Political Parties",
-            "partyAcronym": "(CPP)"
+            "partyAcronym": "(CPP)",
+            "vote": 4
         }
     ],
     "five": [
@@ -87,7 +95,8 @@
             "number": "CN-000400",
             "type": "Party",
             "party": "Movement for Progressive Change",
-            "partyAcronym": "(MPC)"
+            "partyAcronym": "(MPC)",
+            "vote": 5
         },
         {
             "aspirant": "JAMES K. BARCLAY",
@@ -96,7 +105,8 @@
             "number": "CN-000401",
             "type": "Party",
             "party": "Movement for Progressive Change",
-            "partyAcronym": "(MPC)"
+            "partyAcronym": "(MPC)",
+            "vote": 5
         }
     ],
     "six": [
@@ -107,7 +117,8 @@
             "number": "CN-000879",
             "type": "Party",
             "party": "Liberian's People's Party",
-            "partyAcronym": "(LPP)"
+            "partyAcronym": "(LPP)",
+            "vote": 6
         },
         {
             "aspirant": "EMMANUEL YARKPAWOLO",
@@ -116,7 +127,8 @@
             "number": "CN-000880",
             "type": "Party",
             "party": "Liberian's People's Party",
-            "partyAcronym": "(LPP)"
+            "partyAcronym": "(LPP)",
+            "vote": 6
         }
     ],
     "seven": [
@@ -127,7 +139,8 @@
             "number": "CN-000589",
             "type": "Party",
             "party": "All Liberia Coalition Party",
-            "partyAcronym": "(ALCOP)"
+            "partyAcronym": "(ALCOP)",
+            "vote": 7
         },
         {
             "aspirant": "MATTHEW V.Z. DARBLO, SR",
@@ -136,7 +149,8 @@
             "number": "CN-000590",
             "type": "Party",
             "party": "All Liberia Coalition Party",
-            "partyAcronym": "(ALCOP)"
+            "partyAcronym": "(ALCOP)",
+            "vote": 7
         }
     ],
     "eight": [
@@ -147,7 +161,8 @@
             "number": "CN-000997",
             "type": "Party",
             "party": "Democratic People's Party Of Liberia",
-            "partyAcronym": "(DPPL)"
+            "partyAcronym": "(DPPL)",
+            "vote": 8
         },
         {
             "aspirant": "ANNIE Y. TUAZAMA",
@@ -156,7 +171,8 @@
             "number": "CN-001002",
             "type": "Party",
             "party": "Democratic People's Party Of Liberia",
-            "partyAcronym": "(DPPL)"
+            "partyAcronym": "(DPPL)",
+            "vote": 8
         }
     ],
     "nine": [
@@ -167,7 +183,8 @@
             "number": "CN-000894",
             "type": "Party",
             "party": "Reformers National Congress",
-            "partyAcronym": "(RNC)"
+            "partyAcronym": "(RNC)",
+            "vote": 9
         },
         {
             "aspirant": "GRACE YANCY, YUAN",
@@ -176,7 +193,8 @@
             "number": "CN-000893",
             "type": "Party",
             "party": "Reformers National Congress",
-            "partyAcronym": "(RNC)"
+            "partyAcronym": "(RNC)",
+            "vote": 9
         }
     ],
     "ten": [
@@ -187,7 +205,8 @@
             "number": "CN-000992",
             "type": "Party",
             "party": "Liberia First Movement",
-            "partyAcronym": "(LFM)"
+            "partyAcronym": "(LFM)",
+            "vote": 10
         },
         {
             "aspirant": "MAX O. VARGBELEE",
@@ -196,7 +215,8 @@
             "number": "CN-000991",
             "type": "Party",
             "party": "Liberia First Movement",
-            "partyAcronym": "(LFM)"
+            "partyAcronym": "(LFM)",
+            "vote": 10
         }
     ],
     "eleven": [
@@ -207,7 +227,8 @@
             "number": "CN-000822",
             "type": "Independent",
             "party": "Independent Candidate",
-            "partyAcronym": "(IDD)"
+            "partyAcronym": "(IDD)",
+            "vote": 11
         },
         {
             "aspirant": "THOMAS DEKLEU KRUAH",
@@ -216,7 +237,8 @@
             "number": "CN-000820",
             "type": "Independent",
             "party": "Independent Candidate",
-            "partyAcronym": "(IDD)"
+            "partyAcronym": "(IDD)",
+            "vote": 11
         }
     ],
     "twelve": [
@@ -227,7 +249,8 @@
             "number": "CN-000928",
             "type": "Party",
             "party": "Liberians For Prosperity",
-            "partyAcronym": "(LFP)"
+            "partyAcronym": "(LFP)",
+            "vote": 12
         },
         {
             "aspirant": "EMIKE SLAWON, JR",
@@ -236,7 +259,8 @@
             "number": "CN-000927",
             "type": "Party",
             "party": "Liberians For Prosperity",
-            "partyAcronym": "(LFP)"
+            "partyAcronym": "(LFP)",
+            "vote": 12
         }
     ],
     "thirteen": [
@@ -247,7 +271,8 @@
             "number": "CN-000509",
             "type": "Party",
             "party": "Liberian National Union",
-            "partyAcronym": "(LINU)"
+            "partyAcronym": "(LINU)",
+            "vote": 13
         },
         {
             "aspirant": "GRACE-TEE KPAAN",
@@ -256,7 +281,8 @@
             "number": "CN-000508",
             "type": "Party",
             "party": "Liberian National Union",
-            "partyAcronym": "(LINU)"
+            "partyAcronym": "(LINU)",
+            "vote": 13
         }
     ],
     "fourteen": [
@@ -267,7 +293,8 @@
             "number": "CN-000871",
             "type": "Independent",
             "party": "Independent Candidate",
-            "partyAcronym": "(IDD)"
+            "partyAcronym": "(IDD)",
+            "vote": 14
         },
         {
             "aspirant": "CELIA CUFFY BROWN",
@@ -276,7 +303,8 @@
             "number": "CN-000872",
             "type": "Independent",
             "party": "Independent Candidate",
-            "partyAcronym": "(IDD)"
+            "partyAcronym": "(IDD)",
+            "vote": 14
         }
     ],
     "fifteen": [
@@ -287,7 +315,8 @@
             "number": "CN-000885",
             "type": "Party",
             "party": "African Liberation League",
-            "partyAcronym": "(ALL)"
+            "partyAcronym": "(ALL)",
+            "vote": 15
         },
         {
             "aspirant": "SIMEON M.B. MORIBAH",
@@ -296,7 +325,8 @@
             "number": "CN-000884",
             "type": "Party",
             "party": "African Liberation League (ALL)",
-            "partyAcronym": "(ALL)"
+            "partyAcronym": "(ALL)",
+            "vote": 15
         }
     ],
     "sixteen": [
@@ -307,7 +337,8 @@
             "number": "CN-001007",
             "type": "Party",
             "party": "Democratic National Allegiance",
-            "partyAcronym": "(DNA)"
+            "partyAcronym": "(DNA)",
+            "vote": 16
         },
         {
             "aspirant": "JONAH S. DUMOE",
@@ -316,7 +347,8 @@
             "number": "CN-001005",
             "type": "Party",
             "party": "Democratic National Allegiance",
-            "partyAcronym": "(DNA)"
+            "partyAcronym": "(DNA)",
+            "vote": 16
         }
     ],
     "seventeen": [
@@ -327,7 +359,8 @@
             "number": "CN-000801",
             "type": "Party",
             "party": "New Liberia Party (NLP)",
-            "partyAcronym": "(NLP)"
+            "partyAcronym": "(NLP)",
+            "vote": 17
         },
         {
             "aspirant": "Q. SOMAH PAYGAI, SR",
@@ -336,7 +369,8 @@
             "number": "CN-000955",
             "type": "Party",
             "party": "New Liberia Party (NLP)",
-            "partyAcronym": "(NLP)"
+            "partyAcronym": "(NLP)",
+            "vote": 17
         }
     ],
     "eighteen": [
@@ -347,7 +381,8 @@
             "number": "CN-000110",
             "type": "Party",
             "party": "Coalition for Democratic Change",
-            "partyAcronym": "(CDC)"
+            "partyAcronym": "(CDC)",
+            "vote": 18
         },
         {
             "aspirant": "JEWEL C. HOWARD-TAYLOR",
@@ -356,7 +391,8 @@
             "number": "CN-000109",
             "type": "Party",
             "party": "Coalition for Democratic Change",
-            "partyAcronym": "(CDC)"
+            "partyAcronym": "(CDC)",
+            "vote": 18
         }
     ],
     "nineteen": [
@@ -367,7 +403,8 @@
             "number": "CN-000472",
             "type": "Party",
             "party": "Vision for Liberia Transformation",
-            "partyAcronym": "(VOLT)"
+            "partyAcronym": "(VOLT)",
+            "vote": 19
         },
         {
             "aspirant": "ERASMUS D. FAHNBULLEH",
@@ -376,7 +413,8 @@
             "number": "CN-000704",
             "type": "Party",
             "party": "Vision for Liberia Transformation",
-            "partyAcronym": "(VOLT)"
+            "partyAcronym": "(VOLT)",
+            "vote": 19
         }
     ],
     "twenty": [
@@ -387,7 +425,8 @@
             "number": "CN-001027",
             "type": "Party",
             "party": "Liberia Rebuilding Party",
-            "partyAcronym": "(REBUILDERS)"
+            "partyAcronym": "(REBUILDERS)",
+            "vote": 20
         },
         {
             "aspirant": "JUVENAL C. PEARSON",
@@ -396,7 +435,8 @@
             "number": "CN-001026",
             "type": "Party",
             "party": "Liberia Rebuilding Party",
-            "partyAcronym": "(REBUILDERS)"
+            "partyAcronym": "(REBUILDERS)",
+            "vote": 20
         }
     ]
 }

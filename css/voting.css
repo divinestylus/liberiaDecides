@@ -84,10 +84,12 @@ button {
     padding-block: 2rem;
     display: grid;
     gap: 4rem;
+    min-height: 70vh;
 }
 
 #candidates .wrapper img {
     border-radius: 4px;
+    height: 200px;
     object-fit: cover;
 }
 
@@ -106,7 +108,7 @@ button {
 .candidates-card h2 {
     margin: 0 0 0.5rem 0;
     font-size: 1.3rem;
-    line-height: 1rem;
+    line-height: 1.3rem;
     padding: 1.2rem 1rem 0 1rem;
     transition: color 0.2s ease-in;
     color: var(--lightRed);
