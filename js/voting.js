@@ -87,7 +87,7 @@ function displayCandidatesHere() {
     if (localStorage.getItem("category").toLowerCase() === "Representative".toLowerCase()) {
         displayRepresentativeCandidates();
 
-    } 
+    }
     if (localStorage.getItem("category").toLowerCase() === "Presidential".toLowerCase()) {
         displayPresidentialCandidtes();
     }
@@ -111,7 +111,9 @@ function displayPresidentialCandidtes() {
                 </div>
             </div>
             <div class="candidates-card">
-                <img src="${aspirants[1].photo}">
+                <!-- <img src="${aspirants[1].photo}"> -->
+                <img src="./assets/user-icon.png" alt="Vice Standard Bearer Image">
+
                 <div class="text">
                     <h2>${aspirants[1].aspirant}</h2>
                     <p class="position">${aspirants[1].position}</p>
