@@ -239,11 +239,3 @@ registrationForm.addEventListener('submit', (event) => {
         location.href = "../candidates.html";
     }
 });
-
-/* ========== Toggle between register and sign in: Currently disabled until Firebase is added
-function toggleForm() {
-    registrationForm.classList.toggle('active');
-    signinForm.classList.toggle('active');
-}
-registerLoginBtn.forEach(event => event.addEventListener('click', toggleForm));
-*/

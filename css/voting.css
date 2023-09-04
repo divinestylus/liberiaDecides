@@ -1,0 +1,186 @@
+@import url('./main.css');
+
+#header {
+    background-color: var(--white);
+    box-shadow: rgba(26, 46, 76, 0.2) 0px 3px 8px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+/* ===================================
+====================================== */
+
+.profile-photo {
+    width: 35px;
+    height: 35px;
+    border-radius: 100px;
+    object-fit: cover;
+    transition: filter 0.2s ease-in;
+}
+
+.profile-photo:hover {
+    filter: brightness(90%);
+    cursor: pointer;
+}
+
+/* ===================================
+====================================== */
+
+#voting .wrapper {
+    padding-block: 3rem 2rem;
+}
+
+.return-or-vote {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+button {
+    padding: 0.4rem 2rem;
+    border-radius: 4px;
+    border: 0;
+    color: var(--white);
+    background-color: var(--lightRed);
+    transition: all 0.2s ease-in;
+}
+
+.back-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--silver);
+}
+
+.back-btn:hover {
+    background-color: var(--darkSilver);
+    cursor: pointer;
+}
+
+.back-btn svg,
+.vote-btn svg {
+    fill: var(--white);
+    margin-inline-end: 0.2rem;
+    width: 13px;
+}
+
+.vote-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--green);
+}
+
+.vote-btn:hover {
+    background-color: var(--darkGreen);
+    cursor: pointer;
+}
+
+/* ===================================
+====================================== */
+
+#candidates .wrapper {
+    padding-block: 2rem;
+    display: grid;
+    gap: 4rem;
+}
+
+#candidates .wrapper img {
+    border-radius: 4px;
+    object-fit: cover;
+}
+
+.candidates-card {
+    border-radius: 4px;
+}
+
+.candidates-card img {
+    display: block;
+    border-radius: 4px 4px 0 0;
+    margin: 0 auto;
+    width: 100%;
+    object-fit: cover;
+}
+
+.candidates-card h2 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.3rem;
+    line-height: 1rem;
+    padding: 1.2rem 1rem 0 1rem;
+    transition: color 0.2s ease-in;
+    color: var(--lightRed);
+}
+
+.candidates-card p {
+    margin: 0;
+    font-size: 0.8rem;
+    line-height: 1rem;
+    padding: 0 1rem 0 1rem;
+    text-transform: capitalize;
+}
+
+.candidates-card .position, .candidates-card .vote-number {
+    font-weight: 600;
+}
+
+/* ===================================
+======================================
+RESPONSIVE  DESIGN W/ MEDIA QUERIES
+======================================
+====================================== */
+
+
+/* @media(min-width: 450px) {
+    #search-and-result {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .candidates-display {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(min-width: 800px) {
+    .profile-photo {
+        width: 45px;
+        height: 45px;
+    }
+
+    #sidebar {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .sidebar-card {
+        padding: 0.4rem 4rem;
+        box-shadow: rgba(26, 46, 76, 0.4) 0px 3px 8px;
+    }
+
+    .sidebar-card:nth-child(1),
+    .sidebar-card:nth-child(2) {
+        border-bottom: 0;
+    }
+
+    .sidebar-card:nth-child(2),
+    .sidebar-card:nth-child(3) {
+        border-left: 2px solid var(--white);
+    }
+
+    #search-and-result {
+        margin: 0 auto;
+        padding-block-start: 4rem;
+        grid-template-columns: repeat(2, 1fr);
+        width: 600px;
+    }
+
+    .candidates-display {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media(min-width: 1024px) {
+    .candidates-display {
+        grid-template-columns: repeat(4, 1fr);
+        padding-inline: 6rem;
+    }
+} */

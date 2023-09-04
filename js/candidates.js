@@ -6,7 +6,8 @@ CANDIDATES PAGE
 
 const
     candidateDisplay = document.querySelector('.candidates-display'),
-    searchField = document.querySelector('#search-and-result input');
+    searchField = document.querySelector('#search-and-result input'),
+    candidateDisplayToVote = document.querySelector('.candidates-wrapper');
 
 let
     candidatesCategories = document.querySelectorAll('.sidebar-card'),
@@ -14,7 +15,9 @@ let
     presidentialData,
     senatorialData,
     representativeData,
-    candidatesName;
+    candidatesName,
+    candidatesCard;
+
 
 function getData() {
     fetch('./database/presidentialCandidate.json')
@@ -32,6 +35,7 @@ function getData() {
         .then(data => {
             senatorialData = data;
             displayCandidates();
+
         })
         .catch(error => {
             console.error(`Something went wrong: ${error}`)
@@ -42,6 +46,7 @@ function getData() {
         .then(data => {
             representativeData = data;
             displayCandidates();
+
         })
         .catch(error => {
             console.error(`Something went wrong: ${error}`)
@@ -102,8 +107,10 @@ function displayPresidentialCandidates() {
                 `;
         }
     }
+    candidatesCard = document.querySelectorAll('.candidates-card');
     candidatesName = document.querySelectorAll('.candidates-card h2');
     searchCandidates(candidatesName);
+    displayCandidatesToVote(candidatesCard);
 }
 
 function displaySenatorialCandidates() {
@@ -253,3 +260,44 @@ function searchCandidates(candidatesData) {
 }
 
 
+function displayCandidatesToVote(candidates) {
+    // candidateDisplayToVote.innerHTML = "";
+    let selectedCandidate;
+    candidates.forEach(candidate => {
+        candidate.addEventListener('click', (e) => {
+            selectedCandidate = e.currentTarget.children[1].textContent;
+            console.log("Sam");
+
+            for (const group in presidentialData) {
+                const aspirants = presidentialData[group];
+                if (selectedCandidate.toLowerCase() === aspirants[0].aspirant.toLowerCase()) {
+
+                    candidateDisplayToVote.innerText = `
+                    <div class="candidates-card">
+                        <img src="${aspirants[0].photo}">
+                        <div class="text">
+                            <h2>${aspirants[0].aspirant}</h2>
+                            <p class="position">${aspirants[0].position}</p>
+                            <p class="party">${aspirants[0].party}</p>
+                            <p class="vote-number">Vote #2</p>
+                        </div>
+                    </div>
+                    <div class="candidates-card">
+                        <img src="${aspirants[1].photo}">
+                        <div class="text">
+                            <h2>${aspirants[1].aspirant}</h2>
+                            <p class="position">${aspirants[1].position}</p>
+                            <p class="party">${aspirants[1].party}</p>
+                            <p class="vote-number">Vote #2</p>
+                        </div>
+                    </div>
+                    
+                    `;
+                }
+            }
+            window.location.href = "../voting.html"
+            
+        })
+    })
+
+}

@@ -14,6 +14,7 @@
     --blue: #39475e;
     --deepBlue: #1A2E4C;
     --green: #00916E;
+    --darkGreen: #007257;
     --white: #ffffff;
     --offWhite: #faf5f0;
     --metaBlue: #4267B2;
@@ -21,6 +22,7 @@
     --deepBlack: #1d1d1d;
     --gray: #efefef;
     --silver: #c4c4c4;
+    --darkSilver: #8e8e8e;
 }
 
 body {
