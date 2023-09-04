@@ -236,7 +236,7 @@ registrationForm.addEventListener('submit', (event) => {
             gender.checked = false;
         })
         date.value = "";
-        location.href = "../candidates.html";
+        location.href = "./candidates.html";
     }
 });
 
