@@ -236,6 +236,18 @@ registrationForm.addEventListener('submit', (event) => {
             gender.checked = false;
         })
         date.value = "";
-        location.href = "../candidates.html";
+        location.href = "./candidates.html";
     }
+<<<<<<< HEAD
 });
+=======
+});
+
+/* ========== Toggle between register and sign in: Currently disabled until Firebase is added
+function toggleForm() {
+    registrationForm.classList.toggle('active');
+    signinForm.classList.toggle('active');
+}
+registerLoginBtn.forEach(event => event.addEventListener('click', toggleForm));
+*/
+>>>>>>> c09542b7b231bc822cec6c11b3c40a486c2d214b

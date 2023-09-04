@@ -18,7 +18,7 @@ voteBtnEl.forEach(buttonEl => {
 hamburgerMenu.addEventListener('click', displayNavigation);
 
 function voteNow() {
-    window.location.href = '../form.html'
+    window.location.href = './form.html'
 }
 
 function displayNavigation() {
