@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="./assets/logo-icon.png">
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <script src="https://unpkg.com/aos@next/dist/aos.js" defer></script>
     <script src="./js/script.js" defer></script>
     <title>Home | Liberia Decides</title>
 </head>
@@ -35,19 +37,19 @@
 
     <section id="hero">
         <div class="wrapper">
-            <div>
+            <div data-aos="fade-right" data-aos-duration="1000">
                 <h1 class="hero-heading">Your gateway to a peaceful and efficient election</h1>
                 <p>Cast your vote with ease and confidence.</p>
                 <button class="button call-to-action-one">Vote now</button>
             </div>
-            <img src="./assets/hero-img-color.png" alt="People of all age groups voting on their phone">
+            <img src="./assets/hero-img-color.png" alt="People of all age groups voting on their phone" data-aos="fade-left" data-aos-duration="1000">
         </div>
     </section>
 
     <section id="features">
         <div class="wrapper">
             <h1>Features</h1>
-            <div class="card-list">
+            <div class="card-list" data-aos="fade-up" data-aos-duration="1000">
                 <div class="card">
                     <img src="./assets/secure.png" alt="image" class="card-img">
                     <div class="text">
@@ -76,10 +78,10 @@
     </section>
 
     <section id="product-display">
-        <div class="wrapper">
+        <div class="wrapper"> 
             <div class="grid-layout">
-                <img src="./assets/product-display-img.png" alt="image" class="grid-layout-img">
-                <div class="text">
+                <img src="./assets/product-display-img.png" alt="image" class="grid-layout-img" data-aos="fade-right" data-aos-duration="1000">
+                <div class="text" data-aos="fade-left" data-aos-duration="1000">
                     <h1 class="product-display-header">Process</h1>
                     <ul class="text-list">
                         <li>Create an account</li>
@@ -93,7 +95,7 @@
     </section>
 
     <section id="about-us">
-        <div class="wrapper">
+        <div class="wrapper" data-aos="fade-up" data-aos-duration="1000">
             <h1 class="about-us-heading">About Us</h1>
             <p>We empower every Liberian with the ability to vote securely. We promote a peaceful electoral process, by
                 making elections simpler, efficient, and transparent.</p>
@@ -121,7 +123,6 @@
             </div>
         </div>
     </footer>
-
 </body>
 
 </html>
