@@ -403,7 +403,11 @@ RESPONSIVE  DESIGN W/ MEDIA QUERIES
 
     #about-us .wrapper {
         text-align: center;
-        padding-inline: 12rem;
+    }
+
+    #about-us .wrapper p {
+        margin: 0 auto;
+        max-width: 1000px;
     }
 }
 

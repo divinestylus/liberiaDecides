@@ -6,7 +6,8 @@ CANDIDATES PAGE
 
 const
     candidateDisplay = document.querySelector('.candidates-display'),
-    searchField = document.querySelector('#search-and-result input');
+    searchField = document.querySelector('#search-and-result input'),
+    resultBtn = document.querySelector('.view-result');
 
 let
     candidatesCategories = document.querySelectorAll('.sidebar-card'),
@@ -50,6 +51,12 @@ function getData() {
         })
 }
 getData();
+
+
+function viewResult() {
+    window.location.href = "./results.html";
+}
+resultBtn.addEventListener('click', viewResult);
 
 
 function displayUserImg() {
