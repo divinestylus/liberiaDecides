@@ -3,7 +3,6 @@
 HOME PAGE
 ==============================
 =============================*/
-AOS.init();
 
 const
     voteBtnEl = document.querySelectorAll('.button'),
@@ -25,3 +24,6 @@ function voteNow() {
 function displayNavigation() {
     navBar.classList.toggle('displayMenu');
 }
+
+
+AOS.init();

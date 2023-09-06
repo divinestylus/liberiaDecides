@@ -14,34 +14,52 @@
 </head>
 
 <body>
-    <div class="wrapper">
-        <form action="" class="voter-registration" data-aos="fade-up" data-aos-duration="1000">
-            <input type="file">
-            <div class="uploadImgCover">
-                <i class="fa-solid fa-camera"></i>
-                <img src="./assets/user-icon.png" alt="Profile Image" class="upload-img">
-            </div>
-            <input type="text" class="name" placeholder="Name">
 
-            <div class="gender">
-                <label>Gender:</label>
-                <label>
-                    <input type="radio" name="gender" data-gender="Male" class="male"> Male
-                </label>
-                <label>
-                    <input type="radio" name="gender" data-gender="Female" class="female"> Female
-                </label>
-            </div>
+    <div class="register-section">
+        <div class="wrapper">
+            <form action="" class="voter-register-form" data-aos="fade-up" data-aos-duration="1000">
+                <input type="file">
+                <div class="uploadImgCover">
+                    <i class="fa-solid fa-camera"></i>
+                    <img src="./assets/user-icon.png" alt="Profile Image" class="upload-img">
+                </div>
+                <input type="text" class="register-name" placeholder="Name">
 
-            <input type="date" name="date-of-birth" id="date-of-birth">
-            <select name="county" id="county">
-                <option value="Select registered county" selected>Select registered county</option>
-            </select>
-            <select name="district" id="district">
-                <option selected disabled>Select Your District</option>
-            </select>
-            <button class="register">Register</button>
-        </form>
+                <div class="gender">
+                    <label>Gender:</label>
+                    <label>
+                        <input type="radio" name="gender" data-gender="Male" class="male"> Male
+                    </label>
+                    <label>
+                        <input type="radio" name="gender" data-gender="Female" class="female"> Female
+                    </label>
+                </div>
+
+                <input type="date" name="date-of-birth" id="date-of-birth">
+                <select name="county" id="county">
+                    <option value="Select registered county" selected>Select registered county</option>
+                </select>
+                <select name="district" id="district">
+                    <option selected disabled>Select Your District</option>
+                </select>
+                <button class="register">Register</button>
+            </form>
+            <p class="toggle-link">Already have an account? <a>Log in</a>
+            </p>
+        </div>
+    </div>
+
+
+    <div class="login-section">
+        <div class="wrapper">
+            <form action="" class="voter-login-form" data-aos="fade-up" data-aos-duration="1000">
+                <input type="text" class="login-name" placeholder="Name">
+                <input type="number" class="id" placeholder="ID Number" required>
+                <button class="login">Log in</button>
+            </form>
+            <p class="toggle-link">Don't have an account? <a>Register</a>
+            </p>
+        </div>
     </div>
 </body>
 

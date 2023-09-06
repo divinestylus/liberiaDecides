@@ -10,7 +10,8 @@
     padding: 0;
 }
 
-.voter-registration {
+.voter-register-form,
+.voter-login-form {
     width: 100%;
     padding: 2rem;
     border-radius: 4px;
@@ -33,6 +34,22 @@ select {
 
 input[type="file"] {
     display: none;
+}
+
+.toggle-link {
+    padding-block: 2rem;
+    text-align: center;
+}
+
+.toggle-link,
+.toggle-link a {
+    font-size: 0.8rem;
+}
+
+.toggle-link a {
+    text-decoration: none;
+    color: var(--lightRed);
+    cursor: pointer;
 }
 
 .fa-camera {
@@ -110,6 +127,36 @@ button.register:hover {
     cursor: pointer;
 }
 
+.login-section {
+    display: none;
+}
+
+.inactive {
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+
+
+button.login {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    border: 0;
+    border-radius: 4px;
+    background-color: var(--lightRed);
+    color: var(--white);
+    transition: all 0.2s ease-in;
+}
+
+button.login:hover {
+    background-color: var(--red);
+    color: var(--white);
+    cursor: pointer;
+}
+
 .error-msg {
     color: var(--lightRed);
     line-height: 1rem;
@@ -133,8 +180,8 @@ RESPONSIVE  DESIGN W/ MEDIA QUERIES
 
 @media(min-width: 700px) {
 
-    form.voter-registration,
-    form.voter-signin {
+    form.voter-register-form,
+    form.voter-login-form {
         width: 430px;
         box-shadow: 0.5px 2px 8px rgba(0, 0, 0, 0.08);
         margin: 0 auto;
@@ -150,7 +197,8 @@ RESPONSIVE  DESIGN W/ MEDIA QUERIES
     input,
     select,
     label,
-    button.register {
+    button.register,
+    button.login {
         font-size: 0.7rem;
         padding: 0.7rem 1rem;
     }

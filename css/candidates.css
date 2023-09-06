@@ -138,12 +138,15 @@ button.view-result:hover {
 .candidates-card {
     box-shadow: 0.5px 0.5px 25px rgba(0, 0, 0, 0.09);
     border-radius: 4px;
-    transition: transform 0.2s ease-in;
+    transition: all 0.2s ease-in;
 }
 
 .candidates-card:hover {
     cursor: pointer;
-    transform: scale(1.09);
+}
+
+.candidates-card:hover img {
+    filter: brightness(65%);
 }
 
 .candidates-card img {

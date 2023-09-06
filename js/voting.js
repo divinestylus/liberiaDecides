@@ -3,7 +3,6 @@
 VOTING PAGE
 ==============================
 =============================*/
-AOS.init();
 
 const
     backBtnEl = document.querySelector('.back-btn'),
@@ -263,3 +262,6 @@ function displayRepresentativeCandidates() {
         }
     }
 }
+
+
+AOS.init();

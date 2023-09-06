@@ -3,10 +3,10 @@
 FORM VALIDATION AND POPULATION
 ==============================
 =============================*/
-AOS.init();
 
 const
-    userName = document.querySelector('.name'),
+    userRegisterName = document.querySelector('.register-name'),
+    userLoginName = document.querySelector('.login-name'),
     inputFile = document.querySelector('[type="file"]'),
     uploadImage = document.querySelector('.upload-img'),
     maleGender = document.querySelector('input.male'),
@@ -17,10 +17,12 @@ const
     county = document.querySelector('#county'),
     district = document.querySelector('#district'),
     registerBtn = document.querySelector('.register'),
-    signInBtn = document.querySelector('.sign-in'),
-    registrationForm = document.querySelector('form.voter-registration'),
-    signinForm = document.querySelector('form.voter-signin'),
-    registerLoginBtn = document.querySelectorAll('.register-login a'),
+    logInBtn = document.querySelector('.login'),
+    voterRegisterForm = document.querySelector('form.voter-register-form'),
+    voterLoginForm = document.querySelector('form.voter-login-form'),
+    registerSection = document.querySelector('.register-section'),
+    loginSection = document.querySelector('.login-section'),
+    registerLoginBtn = document.querySelectorAll('.toggle-link a'),
     jpgOrPngRegex = /\.(jpg|png|jpeg)$/i;;
 let
     presidentialData,
@@ -76,24 +78,25 @@ function uploadUserImage() {
 }
 uploadImage.addEventListener('click', uploadUserImage);
 
-// function validateUserImage() {
-//     if (!jpgOrPngRegex.test(inputFile.files[0].name)) {
-//         removeErrorMessages();
-//         uploadImage.insertAdjacentHTML("afterend", `<p class="error-msg">Image should either be .jpg, .jpeg or .png</p>`);
-//         return false;
-//     } else {
-//         removeErrorMessages();
-//         return true;
-//     }
-// }
-
-function validateName() {
-    if (userName.value.length < 3) {
+function validateRegisterName() {
+    if (userRegisterName.value.length < 3) {
         removeErrorMessages();
-        userName.insertAdjacentHTML("afterend", `<p class="error-msg">Name should be more than 2 characters</p>`);
+        userRegisterName.insertAdjacentHTML("afterend", `<p class="error-msg">Name should be more than 2 characters</p>`);
         return false;
     }
-    else if (userName.value.length >= 3) {
+    else if (userRegisterName.value.length >= 3) {
+        removeErrorMessages();
+        return true;
+    }
+}
+
+function validateLoginName() {
+    if (userLoginName.value.length < 3) {
+        removeErrorMessages();
+        userLoginName.insertAdjacentHTML("afterend", `<p class="error-msg">Name should be more than 2 characters</p>`);
+        return false;
+    }
+    else if (userLoginName.value.length >= 3) {
         removeErrorMessages();
         return true;
     }
@@ -215,10 +218,11 @@ function populateDistrictDropdown(countyIndex) {
     }
 }
 
-registrationForm.addEventListener('submit', (event) => {
+
+voterRegisterForm.addEventListener('submit', (event) => {
     event.preventDefault();
     // validateUserImage();
-    validateName();
+    validateRegisterName();
     validateGender();
     validateCountyDropdown();
     validateUserAge();
@@ -227,12 +231,12 @@ registrationForm.addEventListener('submit', (event) => {
             localStorage.setItem("gender", gender.dataset.gender);
         }
     })
-    localStorage.setItem("userName", userName.value);
+    localStorage.setItem("userName", userRegisterName.value);
     localStorage.setItem("userAge", userAge);
     localStorage.setItem("registeredCounty", selectedCounty);
     localStorage.setItem("registeredDistrict", district.value.toLowerCase());
-    if (validateName() && validateGender() && validateCountyDropdown() && validateUserAge()) {
-        userName.value = "";
+    if (validateRegisterName() && validateGender() && validateCountyDropdown() && validateUserAge()) {
+        userRegisterName.value = "";
         genders.forEach(gender => {
             gender.checked = false;
         })
@@ -240,3 +244,26 @@ registrationForm.addEventListener('submit', (event) => {
         location.href = "./candidates.html";
     }
 })
+
+voterLoginForm.addEventListener('submit', (event) => {
+    event.preventDefault();
+    validateLoginName();
+    localStorage.setItem("userName", userLoginName.value);
+    if (validateLoginName()) {
+        userLoginName.value = "";
+        location.href = "./candidates.html";
+    }
+})
+
+
+
+function toggleForm() {
+    registerSection.classList.toggle('inactive');
+    loginSection.classList.toggle('active');
+}
+registerLoginBtn.forEach(button => {
+    button.addEventListener('click', toggleForm)
+})
+
+
+AOS.init();

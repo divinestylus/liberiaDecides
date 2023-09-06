@@ -110,7 +110,7 @@ function displayPresidentialCandidates() {
         if (aspirants.length > 0) {
             const firstAspirant = aspirants[0];
             candidateDisplay.innerHTML += `
-                <div class="candidates-card">
+                <div class="candidates-card" data-aos="fade-up" data-aos-duration="1000">
                     <img src="${firstAspirant.photo}" alt="candidates-img">
                     <h2>${firstAspirant.aspirant}</h2>
                     <p class="position">${firstAspirant.position}</p>
@@ -179,7 +179,7 @@ function displaySenatorialCandidates() {
     }
     for (let i = 0; i < counties.length; i++) {
         candidateDisplay.innerHTML += `
-            <div class="candidates-card">
+            <div class="candidates-card" data-aos="fade-up" data-aos-duration="1000">
                 <!-- <img src="${counties[i].photo}" alt="candidates-img"> -->
                 <img src="./assets/user-icon.png" alt="candidates-img">
                 <h2>${counties[i].aspirant}</h2>
@@ -248,7 +248,7 @@ function displayRepresentativeCandidates() {
     }
     for (let i = 0; i < counties.length; i++) {
         candidateDisplay.innerHTML += `
-            <div class="candidates-card">
+            <div class="candidates-card data-aos="fade-up" data-aos-duration="1000"">
                 <!-- <img src="${counties[i].photo}" alt="candidates-img"> -->
                 <img src="./assets/user-icon.png" alt="candidates-img">
                 <h2>${counties[i].aspirant}</h2>
@@ -287,3 +287,6 @@ function displayCandidatesToVote(candidates) {
         })
     })
 }
+
+
+AOS.init();
