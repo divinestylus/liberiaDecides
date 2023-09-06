@@ -6,9 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="./assets/logo-icon.png">
+    <link rel="stylesheet" href="./css/results.css">
     <link rel="stylesheet" href="./css/main.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.3.0/chart.min.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
     <script src="https://unpkg.com/aos@next/dist/aos.js" defer></script>
+    <script src="./js/results.js" type="module" defer></script>
     <script src="./js/script.js" defer></script>
     <title>Home | Liberia Decides</title>
 </head>
@@ -42,7 +45,8 @@
                 <p>Cast your vote with ease and confidence.</p>
                 <button class="button call-to-action-one">Vote now</button>
             </div>
-            <img src="./assets/hero-img-color.png" alt="People of all age groups voting on their phone" data-aos="fade-left" data-aos-duration="1000">
+            <img src="./assets/hero-img-color.png" alt="People of all age groups voting on their phone"
+                data-aos="fade-left" data-aos-duration="1000">
         </div>
     </section>
 
@@ -78,9 +82,10 @@
     </section>
 
     <section id="product-display">
-        <div class="wrapper"> 
+        <div class="wrapper">
             <div class="grid-layout">
-                <img src="./assets/product-display-img.png" alt="image" class="grid-layout-img" data-aos="fade-right" data-aos-duration="1000">
+                <img src="./assets/product-display-img.png" alt="image" class="grid-layout-img" data-aos="fade-right"
+                    data-aos-duration="1000">
                 <div class="text" data-aos="fade-left" data-aos-duration="1000">
                     <h1 class="product-display-header">Process</h1>
                     <ul class="text-list">
@@ -90,6 +95,39 @@
                         <li>View live election's result</li>
                     </ul>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="results">
+        <div class="wrapper">
+            <div class="election-type">
+                <select name="" id="election-type-dropdown">
+                    <option value="Presidential" selected>Presidential</option>
+                    <option value="Senatorial">Senatorial</option>
+                    <option value="Representative">Representative</option>
+                </select>
+            </div>
+        </div>
+    </section>
+    <section id="charts" data-aos="fade-up" data-aos-duration="1500">
+        <div class="title">
+            <h1>Counties</h1>
+            <h1>Gender</h1>
+            <h1>Age Group</h1>
+        </div>
+        <div class="wrapper">
+            <div>
+                <h1>Counties</h1>
+                <canvas class="counties"></canvas>
+            </div>
+            <div>
+                <h1>Gender</h1>
+                <canvas class="gender"></canvas>
+            </div>
+            <div>
+                <h1>Age Group</h1>
+                <canvas class="age-group"></canvas>
             </div>
         </div>
     </section>
