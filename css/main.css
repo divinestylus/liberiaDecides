@@ -74,6 +74,7 @@ svg {
 
 .button {
     border: 0;
+    width: fit-content;
     border-radius: 4px;
     padding: 0.6rem 2rem;
     font-weight: 400;
@@ -259,12 +260,12 @@ ABOUT SECTION
 ====================================== */
 
 #about-us {
-    background-color: var(--white);
-    color: var(--blue);
+    background-color: var(--lightRed);
+    color: var(--white);
 }
 
 .about-us-heading {
-    color: var(--lightRed);
+    color: var(--white);
 }
 
 #about-us p {
@@ -272,12 +273,12 @@ ABOUT SECTION
 }
 
 .call-to-action-two {
-    outline: 1.5px solid var(--blue);
-    color: var(--blue);
+    outline: 1.5px solid var(--white);
+    color: var(--white);
 }
 
 .call-to-action-two:hover {
-    background-color: var(--blue);
+    background-color: var(--white);
     color: var(--white);
 }
 

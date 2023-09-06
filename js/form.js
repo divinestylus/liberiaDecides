@@ -23,13 +23,52 @@ const
     registerSection = document.querySelector('.register-section'),
     loginSection = document.querySelector('.login-section'),
     registerLoginBtn = document.querySelectorAll('.toggle-link a'),
-    jpgOrPngRegex = /\.(jpg|png|jpeg)$/i;;
+    jpgOrPngRegex = /\.(jpg|png|jpeg)$/i;
+
 let
     presidentialData,
     senatorialData,
     representativeData,
+    userData,
     userAge,
-    selectedCounty;
+    selectedCounty,
+    userNameValue,
+    userGenderValue,
+    userDOBValue,
+    userCountyValue,
+    userDistrictValue;
+
+function createAccount() {
+    userNameValue = userRegisterName.value;
+    genders.forEach(gender => {
+        if (gender.checked) {
+            userGenderValue = gender.dataset.gender;
+        }
+    });
+    userDOBValue = date.value;
+    userDOBValue = Number(userDOBValue.substring(0, 4));
+    userCountyValue = county.value;
+    userDistrictValue = Number(district.value);
+
+    const userDataObj = {
+        name: userNameValue,
+        gender: userGenderValue,
+        dateOfBirth: userDOBValue,
+        county: userCountyValue,
+        district: userDistrictValue
+    }
+
+    fetch('./database/user-data.json')
+        .then(response => response.json())
+        .then(data => {
+            userData = data;
+            userData.userData.push(userDataObj);
+            console.log(userData.userData);
+        })
+        .catch(error => {
+            console.error(`Something went wrong: ${error}`)
+        })
+}
 
 function getData() {
     fetch('./database/presidentialCandidate.json')
@@ -213,7 +252,7 @@ function populateDistrictDropdown(countyIndex) {
     for (let i = 0; i < countiesArr.length; i++) {
         option = document.createElement('option');
         option.textContent = countiesArr[i];
-        option.value = countiesArr[i];
+        option.value = i + 1;
         district.append(option);
     }
 }
@@ -236,6 +275,7 @@ voterRegisterForm.addEventListener('submit', (event) => {
     localStorage.setItem("registeredCounty", selectedCounty);
     localStorage.setItem("registeredDistrict", district.value.toLowerCase());
     if (validateRegisterName() && validateGender() && validateCountyDropdown() && validateUserAge()) {
+        createAccount();
         userRegisterName.value = "";
         genders.forEach(gender => {
             gender.checked = false;
