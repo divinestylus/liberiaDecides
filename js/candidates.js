@@ -285,11 +285,9 @@ function displayCandidatesToVote(candidates) {
         candidate.addEventListener('click', (e) => {
             selectedCandidate = e.currentTarget.children[1].textContent;
             selectedCategory = e.currentTarget.children[1].dataset.category;
-            console.log(selectedCandidate);
-            console.log(selectedCategory);
             localStorage.setItem('selectedCandidate', selectedCandidate);
             localStorage.setItem('selectedCategory', selectedCategory);
-            // window.location.href = "./voting.html";
+            window.location.href = "./voting.html";
         })
     })
 }

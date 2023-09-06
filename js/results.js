@@ -71,8 +71,8 @@ displayCountiesChart();
 
 
 function displayGenderChart() {
-let genderChart = document.querySelector('.gender').getContext('2d');
-let genderBarChart;
+    let genderChart = document.querySelector('.gender').getContext('2d');
+    let genderBarChart;
     genderBarChart = new Chart(genderChart, {
         type: 'bar',
         data: {
@@ -105,34 +105,34 @@ displayGenderChart();
 function displayAgeGroupChart() {
     let ageGroupChart = document.querySelector('.age-group').getContext('2d');
     let ageGroupPieChart;
-        ageGroupPieChart = new Chart(ageGroupChart, {
-            type: 'pie',
-            data: {
-                labels: ['18-35', '36-50', '51-65', '66 and Older'],
-                datasets: [{
-                    label: 'Vote by County',
-                    data: [
-                        944733,
-                        242344,
-                        547854,
-                        233434
-                    ],
-                    backgroundColor: [
-                        '#c1413f',
-                        '#39475e'
-                    ]
-                }]
-            },
-            options: {
-                plugins: {
-                    legend: {
-                        display: false,
-                    }
+    ageGroupPieChart = new Chart(ageGroupChart, {
+        type: 'pie',
+        data: {
+            labels: ['18-35', '36-50', '51-65', '66 and Older'],
+            datasets: [{
+                label: 'Vote by County',
+                data: [
+                    944733,
+                    242344,
+                    547854,
+                    233434
+                ],
+                backgroundColor: [
+                    '#c1413f',
+                    '#39475e'
+                ]
+            }]
+        },
+        options: {
+            plugins: {
+                legend: {
+                    display: false,
                 }
             }
-        })
-    }
-    displayAgeGroupChart();
+        }
+    })
+}
+displayAgeGroupChart();
 
 
 
@@ -141,4 +141,5 @@ function displayUserImg() {
         profilePhoto.src = localStorage.getItem("userImage");
     }
 }
+displayUserImg();
 

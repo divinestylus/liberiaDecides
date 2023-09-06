@@ -44,6 +44,7 @@ function displayUserImg() {
         profilePhoto.src = localStorage.getItem("userImage");
     }
 }
+displayUserImg();
 
 
 function getData() {
