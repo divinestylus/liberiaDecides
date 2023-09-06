@@ -112,7 +112,7 @@ function displayPresidentialCandidates() {
             candidateDisplay.innerHTML += `
                 <div class="candidates-card" data-aos="fade-up" data-aos-duration="1000">
                     <img src="${firstAspirant.photo}" alt="candidates-img">
-                    <h2>${firstAspirant.aspirant}</h2>
+                    <h2 data-category="Presidential">${firstAspirant.aspirant}</h2>
                     <p class="position">${firstAspirant.position}</p>
                     <p>${firstAspirant.party}</p>
                 </div>
@@ -182,7 +182,7 @@ function displaySenatorialCandidates() {
             <div class="candidates-card" data-aos="fade-up" data-aos-duration="1000">
                 <!-- <img src="${counties[i].photo}" alt="candidates-img"> -->
                 <img src="./assets/user-icon.png" alt="candidates-img">
-                <h2>${counties[i].aspirant}</h2>
+                <h2 data-category="Senatorial">${counties[i].aspirant}</h2>
                 <p class="position">${counties[i].county} County</p>
                 <p>${counties[i].party}</p>
             </div>
@@ -201,57 +201,58 @@ function displayRepresentativeCandidates() {
     let selectedDistrict = `${localStorage.getItem('registeredDistrict')}`;
     switch (localStorage.getItem('registeredCounty')) {
         case 'bomi':
-            counties = counties[0][1][selectedDistrict];
+            counties = counties[0][1][`district${selectedDistrict}`];
             break;
         case 'bong':
-            counties = counties[1][1][selectedDistrict];
+            counties = counties[1][1][`district${selectedDistrict}`];
             break;
         case 'gbarpolu':
-            counties = counties[2][1][selectedDistrict];
+            counties = counties[2][1][`district${selectedDistrict}`];
             break;
         case 'grandbassa':
-            counties = counties[3][1][selectedDistrict];
+            counties = counties[3][1][`district${selectedDistrict}`];
             break;
         case 'grandcapemount':
-            counties = counties[4][1][selectedDistrict];
+            counties = counties[4][1][`district${selectedDistrict}`];
             break;
         case 'grandgedeh':
-            counties = counties[5][1][selectedDistrict];
+            counties = counties[5][1][`district${selectedDistrict}`];
             break;
         case 'grandkru':
-            counties = counties[6][1][selectedDistrict];
+            counties = counties[6][1][`district${selectedDistrict}`];
             break;
         case 'lofa':
-            counties = counties[7][1][selectedDistrict];
+            counties = counties[7][1][`district${selectedDistrict}`];
+            console.log(counties);
             break;
         case 'margibi':
-            counties = counties[8][1][selectedDistrict];
+            counties = counties[8][1][`district${selectedDistrict}`];
             break;
         case 'maryland':
-            counties = counties[9][1][selectedDistrict];
+            counties = counties[9][1][`district${selectedDistrict}`];
             break;
         case 'montserrado':
-            counties = counties[10][1][selectedDistrict];
+            counties = counties[10][1][`district${selectedDistrict}`];
             break;
         case 'nimba':
-            counties = counties[11][1][selectedDistrict];
+            counties = counties[11][1][`district${selectedDistrict}`];
             break;
         case 'rivergee':
-            counties = counties[12][1][selectedDistrict];
+            counties = counties[12][1][`district${selectedDistrict}`];
             break;
         case 'rivercess':
-            counties = counties[13][1][selectedDistrict];
+            counties = counties[13][1][`district${selectedDistrict}`];
             break;
         case 'sinoe':
-            counties = counties[14][1][selectedDistrict];
+            counties = counties[14][1][`district${selectedDistrict}`];
             break;
     }
     for (let i = 0; i < counties.length; i++) {
         candidateDisplay.innerHTML += `
-            <div class="candidates-card data-aos="fade-up" data-aos-duration="1000"">
-                <!-- <img src="${counties[i].photo}" alt="candidates-img"> -->
+            <div class="candidates-card" data-aos="fade-up" data-aos-duration="1000">
+              
                 <img src="./assets/user-icon.png" alt="candidates-img">
-                <h2>${counties[i].aspirant}</h2>
+                <h2 data-category="Representative">${counties[i].aspirant}</h2>
                 <p class="position">District #${counties[i].district}</p>
                 <p>${counties[i].county} County <br> ${counties[i].party}</p>
             </div>
@@ -279,11 +280,16 @@ function searchCandidates(candidatesData) {
 
 function displayCandidatesToVote(candidates) {
     let selectedCandidate;
+    let selectedCategory;
     candidates.forEach(candidate => {
         candidate.addEventListener('click', (e) => {
             selectedCandidate = e.currentTarget.children[1].textContent;
+            selectedCategory = e.currentTarget.children[1].dataset.category;
+            console.log(selectedCandidate);
+            console.log(selectedCategory);
             localStorage.setItem('selectedCandidate', selectedCandidate);
-            window.location.href = "./voting.html";
+            localStorage.setItem('selectedCategory', selectedCategory);
+            // window.location.href = "./voting.html";
         })
     })
 }

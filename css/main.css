@@ -90,13 +90,13 @@ svg {
     color: var(--blue);
 }
 
-.call-to-action-one:hover,
-.call-to-action-two:hover {
+button.call-to-action-one:hover,
+button.call-to-action-two:hover {
     background-color: var(--white);
     color: var(--blue);
 }
 
-.call-to-action-two:hover {
+button.call-to-action-two:hover {
     color: var(--lightRed);
 }
 
